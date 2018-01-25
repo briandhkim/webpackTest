@@ -22,6 +22,13 @@ module.exports ={
 				]
 			},
 			{
+				test: /\.(ttf|woff|woff2|eot)$/,
+				loader: 'file-loader',
+				options: {
+					name: 'fonts/[name].[ext]'
+				}
+			},
+			{
 				test: /\.(png|svg|gif|jpe?g)$/,
 				use: {
 					loader: 'file-loader',
